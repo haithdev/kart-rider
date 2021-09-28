@@ -1,0 +1,149 @@
+.section-right {
+  text-transform: uppercase;
+}
+.section-news {
+  background-image: url('/static/assets/img/bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 30px;
+  margin: 0 auto;
+  display: flex;
+}
+.section-img-video-demo,
+.section-img-slg-1,
+.section-img-slg-2 {
+  margin: 0 auto;
+}
+.section-img-video-demo{
+  padding-bottom: 5rem;
+}
+.section-img-video-demo img {
+  width: 100%;
+  height: 340px;
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+}
+.banner-1, .banner-2{
+  display: flex;
+  justify-content: center;
+}
+.banner-1 img,
+.banner-2 img {
+  height: 300px;
+  align-items: center;
+}
+.btn-car button,
+.btn-map button,
+.btn-character button {
+  color: $YELLOW-COLOR;
+  font-size: 35px;
+  font-weight: bold;
+  width: 160px;
+  height: 100px;
+  border: none;
+  text-shadow: $SHADOW;
+}
+.btn-car button {
+  background: url('/static/assets/img/Button-frames/btn-dua-xe.png') no-repeat;
+  background-size: contain;
+}
+.btn-map button {
+  background: url('/static/assets/img/Button-frames/btn-frames-map.png') no-repeat;
+  background-size: contain;
+}
+.btn-character button {
+  background: url('/static/assets/img/Button-frames/btn-frames-map.png') no-repeat;
+  background-size: contain;
+}
+.btn-special button {
+  color: $YELLOW-COLOR;
+  font-size: 35px;
+  font-weight: bold;
+  width: 100%;
+  height: 120px;
+  border: none;
+  position: absolute;
+  left: 0;
+  background: none;
+  bottom: 11px;
+  text-shadow: $SHADOW;
+}
+.btn-special img {
+  width: 100%;
+  height: 120px;
+}
+
+.section-title-button {
+  position: relative;
+  margin: 0 auto;
+  background-size: cover !important;
+  width: 545px;
+  height: 370px;
+  background: url('/static/assets/img/frames-source.png');
+}
+.section-title-button ul li {
+  list-style: none;
+}
+.active {
+  border: none !important;
+  background: none !important;
+  color: $YELLOW-COLOR !important;
+  font-weight: bold;
+}
+.section-title-banner {
+  margin-bottom: 35px;
+}
+.section-title-button a {
+  color: $YELLOW-SENCOND-COLOR;
+  font-size: 35px;
+}
+.section-title-button h3 {
+  color: $YELLOW-SENCOND-COLOR;
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+  top: 6%;
+  left: 25%;
+}
+.section-game-mode .nav-tabs{
+  border: none;
+}
+.section-title-button .section-game-mode a{
+  text-shadow: $SHADOW;
+}
+.section-title-button .section-game-mode a:hover {
+  color: $YELLOW-SENCOND-COLOR;
+  border: none;
+  font-weight: bold;
+}
+.section-title-button .section-list-source a {
+  color: black;
+  font-weight: 300;
+  font-size: 35px;
+}
+.section-title-button .section-list-source a:hover {
+  color: black;
+  text-decoration: none;
+  border: none;
+}
+.section-title-button nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.section-game-mode {
+  position: absolute;
+  top: 28%;
+  left: 24%;
+}
+.section-list-source {
+  position: absolute;
+  bottom: 79PX;
+  left: 95px;
+}
+.section-list-source a {
+  color: black;
+  line-height: 1.3;
+}

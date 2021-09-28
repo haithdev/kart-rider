@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  font-family: ContentFont;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $PRIMAMY-COLOR !important;
+}
+
+hr {
+  width: 100%;
+}
+
+.fix-size{
+  max-width: 900px;
+  margin: 0 auto;
+}
+.fix-rs{
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+// 
+.section-character h3, .section-character h3, .section-car h3, .section-map h3{
+  font-family: ContentFont;
+  text-shadow: $SHADOW;
+  font-size: 50px;
+  font-weight: bold;
+  color: $YELLOW-COLOR;
+  background-image: url('/static/assets/img/before-section.png');
+  background-size: contain;
+  background-repeat: unset;
+  font-weight: bold;
+  text-align: center;
+}

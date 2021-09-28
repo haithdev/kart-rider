@@ -1,0 +1,60 @@
+.navbar {
+  top: 15px;
+  width: 593px;
+  height: 90px;
+}
+.home-title {
+  background-image: url("/static/assets/img/Button-frames/button-home.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 138px;
+  margin: 0 auto;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.whitepaper-title {
+  background-image: url("/static/assets/img/Button-frames/button-whitepaper.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 170px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.news-title {
+  background-image: url("/static/assets/img/Button-frames/button-news.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 115px;
+  height: 90px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.contact-title {
+  background-image: url("/static/assets/img/Button-frames/button-contact.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 173px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.navbar ul {
+  margin: 0 auto;
+}
+.nav ul li {
+  padding: 0 20px !important;
+  font-family: TitleFont;
+}
+.navbar ul li a {
+  font-size: 39px;
+  color: $YELLOW-COLOR !important;
+  text-transform: uppercase;
+  font-family: ContentFont;
+  margin-left: -2px;
+}
