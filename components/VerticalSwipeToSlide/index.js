@@ -1,110 +1,73 @@
-import React, { Component } from "react";
+import React, { useRef } from "react";
 import Slider from "react-slick";
-import { Button } from "reactstrap";
+import PropTypes from "prop-types";
 
-export default class AsNavFor extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      nav1: null,
-      nav2: null,
-    };
-    this.next = this.next.bind(this);
-    this.previous = this.previous.bind(this);
-  }
-  next() {
-    this.slider1.slickNext();
-  }
-  previous() {
-    this.slider1.slickPrev();
-  }
+const propTypes = {
+  listImage: PropTypes.array,
+  onClickItem: PropTypes.func,
+};
 
-  componentDidMount() {
-    this.setState({
-      nav1: this.slider1,
-      nav2: this.slider2,
-    });
-  }
-  render() {
-    const settings = {
-      vertical: true,
-      verticalSwiping: true,
-    };
-    return (
-      <div style={{ display: "flex" }}>
-        <div className="slide">
-          <Button onClick={this.previous}>
-            <img
-              src="static/assets/img/Button-frames/btn-arrow.png"
-              alt=""
-              srcset=""
-            />
-          </Button>
-          <Slider
-            {...settings}
-            asNavFor={this.state.nav1}
-            ref={(slider) => (this.slider2 = slider)}
-            slidesToShow={3}
-            swipeToSlide={true}
-            focusOnSelect={true}
+const SliderCommon = ({ listImage = [], onClickItem = () => {} }) => {
+  //! State
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    vertical: true,
+    verticalSwiping: true,
+    // beforeChange: function(currentSlide, nextSlide) {
+    //   console.log("before change", currentSlide, nextSlide);
+    // },
+    // afterChange: function(currentSlide) {
+    //   console.log("after change", currentSlide);
+    // }
+  };
+  const sliderRef = useRef(null);
+
+  //! Function
+  const previous = () => {
+    sliderRef && sliderRef.current && sliderRef.current.slickPrev();
+  };
+
+  const next = () => {
+    sliderRef && sliderRef.current && sliderRef.current.slickNext();
+  };
+
+  //! Render
+  return (
+    <div className="hh-slider">
+      <button
+        type="button"
+        className="btn-arrow btn-prev mr-3 ml-3 button"
+        onClick={previous}
+      >
+        <img src="/static/assets/img/Button-frames/btn-arrow.png" alt="" />
+      </button>
+
+      <Slider ref={sliderRef} {...settings}>
+        {listImage.map((item) => (
+          <div
+            key={item.id}
+            className="item-slider"
+            onClick={() => onClickItem(item)}
           >
-            <div>
-              <h3>1</h3>
-            </div>
-            <div>
-              <h3>2</h3>
-            </div>
-            <div>
-              <h3>3</h3>
-            </div>
-            <div>
-              <h3>4</h3>
-            </div>
-            <div>
-              <h3>5</h3>
-            </div>
-            <div>
-              <h3>6</h3>
-            </div>
-          </Slider>
-          <Button onClick={this.next}>
-            {" "}
-            <img
-              src="static/assets/img/Button-frames/btn-arrow.png"
-              alt=""
-              srcset=""
-            />
-          </Button>
-        </div>
-        <div className="slide-preview">
-          <Slider
-            {...settings}
-            asNavFor={this.state.nav2}
-            ref={(slider) => {
-              this.slider1 = slider;
-            }}
-          >
-            <div>
-              <h3>1</h3>
-            </div>
-            <div>
-              <h3>2</h3>
-            </div>
-            <div>
-              <h3>3</h3>
-            </div>
-            <div>
-              <h3>4</h3>
-            </div>
-            <div>
-              <h3>5</h3>
-            </div>
-            <div>
-              <h3>6</h3>
-            </div>
-          </Slider>
-        </div>
-      </div>
-    );
-  }
-}
+            <img src={item.src} alt="each-char" />
+          </div>
+        ))}
+      </Slider>
+
+      <button
+        type="button"
+        className="btn-arrow ml-3 mr-3 button"
+        onClick={next}
+      >
+        <img src="/static/assets/img/Button-frames/btn-arrow.png" alt="" />
+      </button>
+    </div>
+  );
+};
+
+SliderCommon.propTypes = propTypes;
+export default SliderCommon;

@@ -1,7 +1,7 @@
 .navbar {
-  top: 15px;
+  top: 25px;
   width: 593px;
-  height: 90px;
+  height: 120px;
 }
 .home-title {
   background-image: url("/static/assets/img/Button-frames/button-home.png");
@@ -13,6 +13,14 @@
   display: flex !important;
   align-items: center;
   justify-content: center;
+  @include mobile {
+    height: 60px;
+    width: 92px;
+  }
+  @include tablet {
+    height: 60px;
+    width: 92px;
+  }
 }
 .whitepaper-title {
   background-image: url("/static/assets/img/Button-frames/button-whitepaper.png");
@@ -23,6 +31,14 @@
   display: flex !important;
   align-items: center;
   justify-content: center;
+  @include mobile {
+    height: 60px;
+    width: auto;
+  }
+  @include tablet {
+    height: 60px;
+    width: auto;
+  }
 }
 .news-title {
   background-image: url("/static/assets/img/Button-frames/button-news.png");
@@ -33,6 +49,14 @@
   display: flex !important;
   align-items: center;
   justify-content: center;
+  @include mobile {
+    height: 60px;
+    width: auto;
+  }
+  @include tablet {
+    height: 60px;
+    width: auto;
+  }
 }
 .contact-title {
   background-image: url("/static/assets/img/Button-frames/button-contact.png");
@@ -43,8 +67,31 @@
   display: flex !important;
   align-items: center;
   justify-content: center;
+  @include mobile {
+    height: 60px;
+    width: 109px;
+  }
+  @include tablet {
+    height: 60px;
+    width: 109px;
+  }
+}
+.navbar {
+  @include mobile {
+    width: 100%;
+    top: 0;
+  }
+  @include tablet {
+    width: 100%;
+    top: 0;
+  }
 }
 .navbar ul {
+  .active {
+    font-weight: 300 !important;
+  }
+  display: flex;
+  flex-direction: row;
   margin: 0 auto;
 }
 .nav ul li {
@@ -52,9 +99,15 @@
   font-family: TitleFont;
 }
 .navbar ul li a {
-  font-size: 39px;
+  font-size: 32px;
   color: $YELLOW-COLOR !important;
   text-transform: uppercase;
-  font-family: ContentFont;
+  font-family: TitleFont;
   margin-left: -2px;
+  @include mobile {
+    font-size: 19px;
+  }
+  @include tablet {
+    font-size: 19px;
+  }
 }

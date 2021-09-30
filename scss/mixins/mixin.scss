@@ -1,0 +1,35 @@
+@mixin title-styles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //
+  font-family: titleFont;
+  text-shadow: $SHADOW;
+  font-size: 90px;
+  color: $YELLOW-COLOR;
+  height: 152px;
+  background-image: url("/static/assets/img/before-section.png");
+  background-size: 1920px;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+@mixin title-styles-frames {
+  font-family: titleFont;
+  text-shadow: $SHADOW;
+  font-size: 45px;
+  color: $YELLOW-COLOR;
+  text-align: center;
+}
+
+@mixin mobile {
+  @media (max-width: 496px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}

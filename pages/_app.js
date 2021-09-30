@@ -11,7 +11,8 @@ import NProgress from "nprogress";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "scss/styles.scss";
+import "../scss/styles.scss";
+import DefaultLayout from "layout/DefaultLayout";
 
 Router.events.on("routeChangeStart", (url) => {
   console.log(`Loading: ${url}`);
@@ -28,8 +29,9 @@ export default function MyApp({ Component, pageProps }) {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
         <div id="dzb-progress-bar" />
-
-        <Component {...pageProps} />
+        <DefaultLayout>
+          <Component {...pageProps} />
+        </DefaultLayout>
       </Provider>
     </I18nextProvider>
   );

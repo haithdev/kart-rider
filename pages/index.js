@@ -6,10 +6,11 @@ import useScrollProgressBar from "hooks/useScrollProgressBar";
 import Todo from "components/Todo";
 import DefaultLayout from "layout/DefaultLayout";
 import { useTranslation } from "react-i18next";
-import SectionNews from "./section-news";
-import SectionCharacter from "./section-character";
-import SectionCar from "./section-car";
-import SectionMap from "./section-map";
+import SectionCharacter from "components/SectionCharacter";
+import SectionCar from "components/SectionCar";
+import SectionMap from "components/SectionMap";
+import SectionSpecialMod from "components/SectionSpecialMod";
+import SectionSource from "components/SectionSource";
 
 export default function Index() {
   const dispatch = useDispatch();
@@ -24,11 +25,12 @@ export default function Index() {
   }, []);
 
   return (
-    <DefaultLayout>
-      <SectionNews />
+    <>
+      <SectionSource />
       <SectionCharacter />
       <SectionCar />
       <SectionMap />
-    </DefaultLayout>
+      <SectionSpecialMod />
+    </>
   );
 }
