@@ -6,6 +6,7 @@ import SectionBuild from "components/SectionBuild";
 import SectionBuildGem from "components/SectionBuildGem";
 import SectionAboutUs from "components/SectionAboutUs";
 import SectionTokenomic from "components/SectionTokenomic";
+import HeaderCustom from "components/HeaderCustom";
 
 const propTypes = {};
 
@@ -17,14 +18,18 @@ const WhitePaper = (props) => {
 
   //! Render
   return (
-    <>
-      <SectionAboutUs />
-      <RoadMap />
-      <SectionTokenomic />
-      <SectionBuild />
-      <SectionBuildGem />
-    </>
+    <div className="whitepaper-container">
+      <HeaderCustom />
+      <div className="whitepaper-section">
+        <SectionAboutUs />
+        <RoadMap />
+        <SectionTokenomic />
+        <SectionBuild />
+        <SectionBuildGem />
+      </div>
+    </div>
   );
+  e;
 };
 
 WhitePaper.propTypes = propTypes;

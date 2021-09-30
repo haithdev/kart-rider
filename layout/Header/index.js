@@ -11,6 +11,7 @@ const Header = (props) => {
   const isLogin = authReducer?.auth?.isLogin;
 
   return (
+    
     <div className="header">
       <div className="fix-size">
         <div className="nav-mobile">

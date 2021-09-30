@@ -11,6 +11,8 @@ import SectionCar from "components/SectionCar";
 import SectionMap from "components/SectionMap";
 import SectionSpecialMod from "components/SectionSpecialMod";
 import SectionSource from "components/SectionSource";
+import ReactFullpage from "@fullpage/react-fullpage";
+import Header from "../layout/Header";
 
 export default function Index() {
   const dispatch = useDispatch();
@@ -26,11 +28,33 @@ export default function Index() {
 
   return (
     <>
-      <SectionSource />
-      <SectionCharacter />
-      <SectionCar />
-      <SectionMap />
-      <SectionSpecialMod />
+      <ReactFullpage
+        scrollOverflow={true}
+        render={({ state, fullpageApi }) => {
+          return (
+            <div id="fullpage-wrapper">
+              <div className="section">
+                <Header />
+              </div>
+              <div className="section">
+                <SectionSource />
+              </div>
+              <div className="section">
+                <SectionCharacter />
+              </div>
+              <div className="section">
+                <SectionCar />
+              </div>
+              <div className="section">
+                <SectionMap />
+              </div>
+              <div className="section">
+                <SectionSpecialMod />
+              </div>
+            </div>
+          );
+        }}
+      />
     </>
   );
 }

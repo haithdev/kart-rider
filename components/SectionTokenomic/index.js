@@ -13,8 +13,8 @@ const SectionTokenomic = (props) => {
   //! Render
   return (
     <div className="section-about-container">
-      <div className="section-about-introduction">
-        <h3>INTRODUCTION</h3>
+      <div className="section-about-tokenomic">
+        <h3>TOKENOMIC</h3>
         <p>Stable Token</p>
         <p>Symbol: FC</p>
         <p>Total supply: Unlimited</p>

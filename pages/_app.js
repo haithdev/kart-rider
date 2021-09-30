@@ -29,9 +29,7 @@ export default function MyApp({ Component, pageProps }) {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
         <div id="dzb-progress-bar" />
-        <DefaultLayout>
           <Component {...pageProps} />
-        </DefaultLayout>
       </Provider>
     </I18nextProvider>
   );
