@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import PropTypes from "prop-types";
-
+import Link from "next/link";
 const propTypes = {};
 
 const SectionSource = (props) => {
@@ -36,7 +36,7 @@ const SectionSource = (props) => {
                 src="static/assets/img/Button-frames/btn-mod-choi-dac-biet.png"
                 alt=""
               />
-              <button>Mode chơi đặc biệt</button>
+                <button>Mode chơi đặc biệt</button>
             </div>
           </div>
         </div>

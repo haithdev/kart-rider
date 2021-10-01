@@ -1,6 +1,6 @@
 .header {
   margin: 0 auto;
-  height: 1080px;
+  height: 100vh;
   background-image: url("/static/assets/img/bg-header.png");
   background-position: top;
   background-size: auto;
@@ -13,7 +13,7 @@
     bottom: 0;
     margin-left: auto;
     margin-right: auto;
-    height: 152px;
+    height: 70px;
     content: "";
     background-image: url("/static/assets/img/before-section.png");
     background-size: 1920px;
@@ -28,6 +28,13 @@
       height: 60px;
       background-size: cover;
     }
+    @include web {
+      height: 100px;
+    }
+  }
+  @include web {
+    background-size: cover;
+    height: 100vh !important;
   }
   @include mobile {
     height: 100% !important;
@@ -81,7 +88,10 @@
   position: absolute;
   bottom: 6%;
   z-index: 1;
-  width: 362px;
+  width: 250px;
+  @include middle {
+    bottom: 3%;
+  }
   img {
     width: 100%;
   }
@@ -90,5 +100,8 @@
   }
   @include tablet {
     width: 200px;
+  }
+  @include middle {
+    width: 250px;
   }
 }

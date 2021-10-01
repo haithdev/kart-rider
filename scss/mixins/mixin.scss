@@ -33,3 +33,15 @@
     @content;
   }
 }
+
+@mixin middle {
+  @media (max-width: 1366px) {
+    @content;
+  }
+}
+
+@mixin web {
+  @media (max-width: 1920px) {
+    @content;
+  }
+}

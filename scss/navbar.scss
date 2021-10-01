@@ -80,10 +80,12 @@
   @include mobile {
     width: 100%;
     top: 0;
+    justify-content: center;
   }
   @include tablet {
     width: 100%;
     top: 0;
+    justify-content: center;
   }
 }
 .navbar ul {

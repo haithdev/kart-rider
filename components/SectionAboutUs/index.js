@@ -84,7 +84,7 @@ const SectionAboutUs = (props) => {
               logistics for the Korean army
             </li>
           </ul>
-          <h4>NGUYEN THANH CHUNG - CDD</h4>
+          <h4>NGUYEN THANH CHUNG - PDD</h4>
           <ul>
             <li>Former project development director of BSC Securities exchange - BIDC Security Co</li>
             <li>

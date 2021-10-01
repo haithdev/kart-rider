@@ -33,24 +33,24 @@ export default function Index() {
         render={({ state, fullpageApi }) => {
           return (
             <div id="fullpage-wrapper">
-              <div className="section">
+              <section className="section">
                 <Header />
-              </div>
-              <div className="section">
+              </section>
+              <section className="section">
                 <SectionSource />
-              </div>
-              <div className="section">
+              </section>
+              <section className="section" id="section-character">
                 <SectionCharacter />
-              </div>
-              <div className="section">
+              </section>
+              <section className="section" id="section-car">
                 <SectionCar />
-              </div>
-              <div className="section">
+              </section>
+              <section className="section" id="section-map">
                 <SectionMap />
-              </div>
-              <div className="section">
+              </section>
+              <section className="section">
                 <SectionSpecialMod />
-              </div>
+              </section>
             </div>
           );
         }}
