@@ -1,15 +1,10 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import PropTypes from "prop-types";
-import VerticalSwipeToSlide from "components/VerticalSwipeToSlide";
-import Title from "components/Title";
 import CharacterWithSlider from "components/CharacterWithSlider";
 
 const propTypes = {};
 
 const SectionCharacter = (props) => {
   //! State
-  const dispatch = useDispatch();
 
   //! Function
 

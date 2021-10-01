@@ -5,9 +5,9 @@
   //
   font-family: titleFont;
   text-shadow: $SHADOW;
-  font-size: 90px;
+  font-size: 65px;
   color: $YELLOW-COLOR;
-  height: 152px;
+  height: 100px;
   background-image: url("/static/assets/img/before-section.png");
   background-size: 1920px;
   background-position: center;
@@ -41,7 +41,13 @@
 }
 
 @mixin web {
-  @media (max-width: 1920px) {
+  @media (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin overload {
+  @media (min-width: 1440px) {
     @content;
   }
 }

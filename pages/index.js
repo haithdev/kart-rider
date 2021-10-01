@@ -32,26 +32,39 @@ export default function Index() {
         scrollOverflow={true}
         render={({ state, fullpageApi }) => {
           return (
-            <div id="fullpage-wrapper">
-              <section className="section">
+            <ReactFullpage.Wrapper id="fullpage-wrapper">
+              <div className="section">
                 <Header />
-              </section>
-              <section className="section">
-                <SectionSource />
-              </section>
-              <section className="section" id="section-character">
+              </div>
+              <div className="section">
+                <SectionSource
+                  onClickCharacter={() => {
+                    fullpageApi.moveTo(3, 0);
+                  }}
+                  onClickCar={() => {
+                    fullpageApi.moveTo(4, 0);
+                  }}
+                  onClickMap={() => {
+                    fullpageApi.moveTo(5, 0);
+                  }}
+                  onClickSpecialMode={() => {
+                    fullpageApi.moveTo(6, 0);
+                  }}
+                />
+              </div>
+              <div className="section">
                 <SectionCharacter />
-              </section>
-              <section className="section" id="section-car">
+              </div>
+              <div className="section">
                 <SectionCar />
-              </section>
-              <section className="section" id="section-map">
+              </div>
+              <div className="section">
                 <SectionMap />
-              </section>
-              <section className="section">
+              </div>
+              <div className="section">
                 <SectionSpecialMod />
-              </section>
-            </div>
+              </div>
+            </ReactFullpage.Wrapper>
           );
         }}
       />

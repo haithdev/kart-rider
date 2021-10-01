@@ -1,6 +1,7 @@
 .section-right {
   text-transform: uppercase;
 }
+
 .section-news {
   background-image: url("/static/assets/img/bg.png");
   background-position: center;
@@ -16,6 +17,11 @@
     background-size: cover;
   }
   @include middle {
+    background-size: cover;
+  }
+  @include overload{
+    height: 100vh;
+    align-items: center;
     background-size: cover;
   }
 }

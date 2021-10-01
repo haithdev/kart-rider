@@ -20,17 +20,20 @@
     background-position: center;
     background-repeat: no-repeat;
     z-index: 0;
-    @include mobile {
-      height: 60px;
-      background-size: cover;
+    @include web {
+      height: 100px;
     }
     @include tablet {
       height: 60px;
       background-size: cover;
     }
-    @include web {
-      height: 100px;
+    @include mobile {
+      height: 60px;
+      background-size: cover;
     }
+  }
+  @include overload {
+    background-position: bottom;
   }
   @include web {
     background-size: cover;
@@ -91,17 +94,15 @@
   width: 250px;
   @include middle {
     bottom: 3%;
+    width: 250px;
   }
   img {
     width: 100%;
   }
-  @include mobile {
-    width: 200px;
-  }
   @include tablet {
     width: 200px;
   }
-  @include middle {
-    width: 250px;
+  @include mobile {
+    width: 200px;
   }
 }

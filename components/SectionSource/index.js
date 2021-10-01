@@ -4,9 +4,13 @@ import PropTypes from "prop-types";
 import Link from "next/link";
 const propTypes = {};
 
-const SectionSource = (props) => {
+const SectionSource = ({
+  onClickCar = () => {},
+  onClickMap = () => {},
+  onClickCharacter = () => {},
+  onClickSpecialMode = () => {},
+}) => {
   //! State
-  const dispatch = useDispatch();
 
   //! Function
 
@@ -20,23 +24,23 @@ const SectionSource = (props) => {
             <img src="static/assets/img/video-thumbnail.png" alt="" />
           </div>
           <div className="row button-section-left">
-            <div className="col btn-car">
+            <div className="col btn-car" onClick={onClickCar}>
               <button>Xe đua</button>
             </div>
-            <div className="col btn-map">
+            <div className="col btn-map" onClick={onClickMap}>
               <button>Map</button>
             </div>
-            <div className="col btn-character">
+            <div className="col btn-character" onClick={onClickCharacter}>
               <button>Nhân vật</button>
             </div>
           </div>
           <div className="col">
-            <div className="btn-special">
+            <div className="btn-special" onClick={onClickSpecialMode}>
               <img
                 src="static/assets/img/Button-frames/btn-mod-choi-dac-biet.png"
                 alt=""
               />
-                <button>Mode chơi đặc biệt</button>
+              <button>Mode chơi đặc biệt</button>
             </div>
           </div>
         </div>
