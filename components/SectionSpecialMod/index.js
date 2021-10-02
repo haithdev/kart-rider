@@ -12,7 +12,7 @@ const SectionSpecialMod = (props) => {
   //! Render
   return (
     <>
-      <Title />
+      <Title label="MODE CHƠI ĐẶC BIỆT" />
       <div className="section-special-mod">
         <Slider3D
           slidesProps={[

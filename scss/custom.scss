@@ -27,6 +27,7 @@ hr {
 }
 .fix-rs {
   display: flex;
+  height: 100%;
   max-width: 1520px;
   margin: 0 auto;
   @include mobile {
@@ -160,13 +161,13 @@ hr {
 .character-section {
   height: 100vh;
   @include middle {
-    height: 100vh;
+    height: 800px;
   }
   @include tablet {
-    height: 100vh;
+    height: 800px;
   }
   @include mobile {
-    height: 100vh;
+    height: 500px;
   }
   &__container {
     width: 100%;
@@ -191,7 +192,8 @@ hr {
       height: 100vh;
     }
     @include mobile {
-      height: 100vh;
+      height: 100%;
+      padding-bottom: 65px;
     }
   }
 
@@ -216,9 +218,8 @@ hr {
       align-items: center;
     }
     @include mobile {
-      height: 100vh;
+      height: 100%;
       align-items: center;
-      padding: 0 25px;
     }
   }
 
@@ -274,7 +275,7 @@ hr {
     justify-content: center;
   }
   @include mobile {
-    height: 100vh;
+    height: 100%;
     width: 50% !important;
     justify-content: center;
   }
@@ -323,7 +324,7 @@ hr {
       width: 120px;
     }
     @include mobile {
-      width: 70px;
+      width: 90px;
     }
   }
   .btn-prev {
@@ -382,7 +383,7 @@ hr {
     }
     @include mobile {
       top: 15%;
-      width: 220px;
+      width: 200px;
     }
   }
 }
@@ -401,7 +402,7 @@ hr {
     height: 100vh;
   }
   @include mobile {
-    height: 100vh;
+    height: 500px;
   }
   padding-top: 60px;
   width: 100%;

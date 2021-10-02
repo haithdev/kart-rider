@@ -19,7 +19,7 @@
   @include middle {
     background-size: cover;
   }
-  @include overload{
+  @include overload {
     height: 100vh;
     align-items: center;
     background-size: cover;
@@ -124,25 +124,35 @@
 }
 
 .section-title-button {
-  position: relative;
-  margin: 0 auto;
-  background: url("/static/assets/img/frames-source.png");
-  background-size: contain !important;
-  background-repeat: no-repeat;
-  width: 545px;
-  height: 370px;
-  @include mobile {
-    width: 100%;
-    height: 228px;
-    background-size: contain !important;
-    background-repeat: no-repeat;
+  @include middle {
+    width: 50%;
   }
   @include tablet {
+    width: 70%;
+  }
+  @include mobile {
     width: 100%;
-    height: 254px;
-    background-size: contain !important;
+  }
+  position: relative;
+  margin: 0 auto;
+  .section-title-button__frames {
+    @include mobile {
+      background-position: top;
+    }
+    margin-top: -15px;
+    width: 100%;
+    height: 250px;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    background-image: url("/static/assets/img/frames-source.png");
+    position: relative;
+    .section-title-button__frames_inner {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      right: 0;
+    }
   }
 }
 .section-title-button ul li {
@@ -162,12 +172,12 @@
   font-size: 35px;
 }
 .section-title-button h3 {
-  @include mobile {
-    font-size: 30px;
-    background-size: 220px;
-  }
   @include tablet {
     font-size: 30px;
+  }
+  @include mobile {
+    font-size: 25px;
+    background-size: 180px;
   }
   color: $YELLOW-SENCOND-COLOR;
   font-size: 40px;
@@ -212,6 +222,8 @@
   justify-content: center;
 }
 .section-game-mode {
+  display: flex;
+  justify-content: center;
   a {
     @include mobile {
       font-size: 27px !important;
@@ -220,35 +232,37 @@
       font-size: 30px;
     }
   }
-  @include mobile {
-    position: absolute;
-    left: 50%;
-    bottom: 50%;
-    transform: translate(-52%, -76%);
-  }
-  @include tablet {
-    position: absolute;
-    left: 50%;
-    bottom: 50%;
-    transform: translate(-52%, -76%);
-  }
 }
 .section-list-source {
-  transform: translate(-147%, -33%);
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  @include tablet {
-    transform: translate(-230%, -20%);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-  }
-  @include mobile {
-    position: absolute;
-    left: 50%;
-    bottom: 50%;
-    transform: translate(-142%, -13px);
+  display: flex;
+  margin: 0 10%;
+  ul {
+    width: 100%;
+    background-size: cover;
+    @include middle {
+    }
+
+    .rank_1 {
+      background-image: url("/static/assets/img/rank_1.png");
+      background-repeat: no-repeat;
+      @include mobile {
+        background-size: contain;
+      }
+    }
+    .rank_2 {
+      background-image: url("/static/assets/img/rank_2.png");
+      background-repeat: no-repeat;
+      @include mobile {
+        background-size: contain;
+      }
+    }
+    .rank_3 {
+      background-image: url("/static/assets/img/rank_3.png");
+      background-repeat: no-repeat;
+      @include mobile {
+        background-size: contain;
+      }
+    }
   }
   ul li {
     padding: 3px 0;
@@ -256,17 +270,18 @@
       padding: 0 !important;
     }
     @include tablet {
-      padding: 5px 0;
+      padding: 11px 0;
     }
   }
   a {
     color: black;
     line-height: 1.3;
+    margin: 0 15%;
     @include mobile {
       font-size: 23px !important;
     }
     @include tablet {
-      font-size: 23px !important;
+      font-size: 25px !important;
     }
   }
 }

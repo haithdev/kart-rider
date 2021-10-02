@@ -64,100 +64,26 @@ const SectionSource = ({
           </div>
           <div className="section-title-button">
             <h3>Bảng thành tích</h3>
-            <nav className="section-game-mode">
-              <div className="nav nav-tabs" id="nav-tab" role="tablist">
-                <a
-                  className="nav-item nav-link active"
-                  id="nav-home-tab"
-                  data-toggle="tab"
-                  href="#nav-home"
-                  role="tab"
-                  aria-controls="nav-home"
-                  aria-selected="true"
-                >
-                  EASY
-                </a>
-                <a
-                  className="nav-item nav-link"
-                  id="nav-profile-tab"
-                  data-toggle="tab"
-                  href="#nav-profile"
-                  role="tab"
-                  aria-controls="nav-profile"
-                  aria-selected="false"
-                >
-                  NORMAL
-                </a>
-                <a
-                  className="nav-item nav-link"
-                  id="nav-contact-tab"
-                  data-toggle="tab"
-                  href="#nav-contact"
-                  role="tab"
-                  aria-controls="nav-contact"
-                  aria-selected="false"
-                >
-                  HARD
-                </a>
-              </div>
-            </nav>
-            <div
-              className="tab-content section-list-source"
-              id="nav-tabContent"
-            >
-              <div
-                className="tab-pane fade show active"
-                id="nav-home"
-                role="tabpanel"
-                aria-labelledby="nav-home-tab"
-              >
-                <ul>
-                  <li>
-                    <a href>NGƯỜI CHƠI</a>
-                  </li>
-                  <li>
-                    <a href>NGƯỜI CHƠI</a>
-                  </li>
-                  <li>
-                    <a href>NGƯỜI CHƠI</a>
-                  </li>
-                </ul>
-              </div>
-              <div
-                className="tab-pane fade"
-                id="nav-profile"
-                role="tabpanel"
-                aria-labelledby="nav-profile-tab"
-              >
-                <ul>
-                  <li>
-                    <a href>NGƯỜI CHƠI Normal</a>
-                  </li>
-                  <li>
-                    <a href>NGƯỜI CHƠI Normal</a>
-                  </li>
-                  <li>
-                    <a href>NGƯỜI CHƠI Normal</a>
-                  </li>
-                </ul>
-              </div>
-              <div
-                className="tab-pane fade"
-                id="nav-contact"
-                role="tabpanel"
-                aria-labelledby="nav-contact-tab"
-              >
-                <ul>
-                  <li>
-                    <a href>NGƯỜI CHƠI Hard</a>
-                  </li>
-                  <li>
-                    <a href>NGƯỜI CHƠI Hard</a>
-                  </li>
-                  <li>
-                    <a href>NGƯỜI CHƠI Hard</a>
-                  </li>
-                </ul>
+            <div className="section-title-button__frames">
+              <div className="section-title-button__frames_inner">
+                <div className="section-game-mode" id="nav-tab" role="tablist">
+                  <a className="nav-item nav-link active">EASY</a>
+                  <a className="nav-item nav-link">NORMAL</a>
+                  <a className="nav-item nav-link">HARD</a>
+                </div>
+                <div className="section-list-source">
+                  <ul>
+                    <li className="rank_1">
+                      <a>NGƯỜI CHƠI</a>
+                    </li>
+                    <li className="rank_2">
+                      <a href>NGƯỜI CHƠI</a>
+                    </li>
+                    <li className="rank_3">
+                      <a href>NGƯỜI CHƠI</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
