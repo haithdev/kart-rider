@@ -72,15 +72,24 @@ const SectionSource = ({
                   <a className="nav-item nav-link">HARD</a>
                 </div>
                 <div className="section-list-source">
-                  <ul>
+                  <ul className="scrollbar" id="scroll-bar-source">
                     <li className="rank_1">
                       <a>NGƯỜI CHƠI</a>
                     </li>
                     <li className="rank_2">
-                      <a href>NGƯỜI CHƠI</a>
+                      <a>NGƯỜI CHƠI 2</a>
                     </li>
                     <li className="rank_3">
-                      <a href>NGƯỜI CHƠI</a>
+                      <a>NGƯỜI CHƠI 3</a>
+                    </li>
+                    <li className="rank_1">
+                      <a>NGƯỜI CHƠI 4</a>
+                    </li>
+                    <li className="rank_2">
+                      <a>NGƯỜI CHƠI 5</a>
+                    </li>
+                    <li className="rank_3">
+                      <a>NGƯỜI CHƠI 6</a>
                     </li>
                   </ul>
                 </div>

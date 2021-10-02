@@ -8,7 +8,11 @@ const propTypes = {
   listImage: PropTypes.array,
 };
 
-const CharacterWithSlider = ({ label = "", listImage = [] }) => {
+const CharacterWithSlider = ({
+  label = "",
+  listImage = [],
+  isFullImage = false,
+}) => {
   //! State
   const timer = useRef(null);
   const refPreview = useRef(null);
@@ -40,7 +44,13 @@ const CharacterWithSlider = ({ label = "", listImage = [] }) => {
             onClickItem={onClickItemSlider}
           />
 
-          <div className="character-section__preview">
+          <div
+            className={
+              isFullImage
+                ? "character-section__preview fullImage"
+                : "character-section__preview"
+            }
+          >
             {show && (
               <img
                 ref={refPreview}

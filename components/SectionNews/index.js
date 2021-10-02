@@ -86,7 +86,49 @@ const SectionNews = (props) => {
               <p>Một thông báo gì đó</p>
             </div>
           </div>
-          
+
+          <div className="hh-new__item">
+            <div className="hh-new__item_thumbnail">
+              <img
+                src="/static/assets/img/news/thumbnail.png"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div className="hh-new__item_title">
+              <h4>[THÔNG BÁO]</h4>
+              <p>Một thông báo gì đó</p>
+            </div>
+          </div>
+
+          <div className="hh-new__item">
+            <div className="hh-new__item_thumbnail">
+              <img
+                src="/static/assets/img/news/thumbnail.png"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div className="hh-new__item_title">
+              <h4>[THÔNG BÁO]</h4>
+              <p>Một thông báo gì đó</p>
+            </div>
+          </div>
+
+          <div className="hh-new__item">
+            <div className="hh-new__item_thumbnail">
+              <img
+                src="/static/assets/img/news/thumbnail.png"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div className="hh-new__item_title">
+              <h4>[THÔNG BÁO]</h4>
+              <p>Một thông báo gì đó</p>
+            </div>
+          </div>
+
           <div className="hh-new__item">
             <div className="hh-new__item_thumbnail">
               <img
@@ -113,9 +155,6 @@ const SectionNews = (props) => {
               <p>Một thông báo gì đó</p>
             </div>
           </div>
-        </div>
-        <div className="hh-new-scroll">
-          <img src="/static/assets/img/news/scroll.png" alt="" srcset="" />
         </div>
       </div>
     </div>

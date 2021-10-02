@@ -14,6 +14,7 @@ const SectionMap = (props) => {
   //! Render
   return (
     <CharacterWithSlider
+      isFullImage={true}
       label="Map"
       listImage={[
         {

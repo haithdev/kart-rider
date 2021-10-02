@@ -96,14 +96,22 @@ hr {
   color: $YELLOW-COLOR;
   height: 152px;
   text-align: center;
+  @include tablet {
+    height: 100px;
+  }
   @include mobile {
     height: 60px;
   }
 }
 .hh-news-banner {
   width: 362px;
-  margin-top: 10rem;
   position: relative;
+  @include middle {
+    width: 280px;
+  }
+  @include tablet {
+    width: 270px;
+  }
   img {
     @include tablet {
       width: 60%;
@@ -117,11 +125,14 @@ hr {
     margin-top: 0 !important;
   }
   h3 {
+    @include middle {
+      font-size: 45px;
+    }
     @include tablet {
-      font-size: 35px;
+      font-size: 32px;
     }
     @include mobile {
-      font-size: 30px;
+      font-size: 20px;
     }
     font-size: 70px;
     position: absolute;
@@ -262,6 +273,12 @@ hr {
         height: auto;
       }
     }
+  }
+}
+.fullImage {
+  img {
+    width: 100% !important;
+    height: auto;
   }
 }
 
@@ -791,49 +808,108 @@ hr {
   background-position: center;
   max-width: 1920px;
   margin: 0 auto;
+  @include middle {
+    min-height: 1700px;
+  }
+  @include tablet {
+    min-height: 1200px;
+    background-size: 0;
+  }
+  @include mobile {
+    min-height: auto;
+  }
   .hh-new-container {
-    .hh-new-scroll {
-      img {
-        @include tablet {
-          width: 100%;
-        }
-        @include mobile {
-          width: 100%;
-        }
+    .hh-new-list {
+      margin: 50px;
+      height: 100vh;
+      overflow-y: scroll;
+      @include overload {
+        height: 1045px;
+      }
+      @include middle {
+        height: 600px;
       }
       @include tablet {
-        height: auto;
-        width: 40px;
+        margin: 30px;
+        height: 610px;
       }
       @include mobile {
-        height: auto;
-        width: 20px;
+        margin: 20px;
+        height: 365px;
+      }
+    }
+    .hh-new-list::-webkit-scrollbar-track {
+      background-size: cover;
+    }
+
+    .hh-new-list::-webkit-scrollbar {
+      width: 30px;
+      background-image: url("/static/assets/img/scroll-news.png");
+      background-size: cover;
+      background-position: center;
+      @include middle {
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      @include mobile {
+        width: 15px;
+        background-size: cover;
+      }
+    }
+
+    .hh-new-list::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-image: url("/static/assets/img/scroll-icon-news.png");
+      background-size: 30px 100vh;
+      background-repeat: no-repeat;
+      @include middle {
+        background-size: 30px 100%;
+      }
+      @include tablet {
+        background-size: 30px 100%;
+      }
+      @include mobile {
+        background-size: 15px 100%;
       }
     }
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 85px;
-    max-width: 1637px;
+    max-width: 1000px;
     margin: 0 auto;
-    background-size: contain;
-    background-position: center;
+    background-size: 1000px;
+    background-position: top;
     background-repeat: no-repeat;
     background-image: url("/static/assets/img/news/frames.png");
+    @include middle {
+      width: 850px;
+      background-size: 850px 100%;
+    }
+    @include tablet {
+      width: 650px;
+      background-size: 650px 100%;
+    }
     @include mobile {
-      margin-top: 0 !important;
-      padding: 25px;
-      background-size: cover;
+      width: 300px;
+      background-size: 300px 100%;
     }
   }
   .hh-new__item {
-    width: 1062px;
+    width: 800px;
     margin: auto;
+    padding: 0 15px;
     display: flex;
     align-items: center;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("/static/assets/img/news/item.png");
+    @include middle {
+      padding-left: 8px;
+      width: 500px;
+      height: 100px;
+      background-size: 500px 100px;
+    }
     @include tablet {
       padding-left: 8px;
       width: 500px;
@@ -842,17 +918,21 @@ hr {
     }
     @include mobile {
       padding-left: 8px;
-      width: 300px;
-      background-size: cover;
+      width: 240px;
+      background-size: contain;
       height: 60px;
     }
     .hh-new__item_thumbnail {
       img {
+        width: 200px;
+        @include middle {
+          width: 125px;
+        }
         @include tablet {
           width: 125px;
         }
         @include mobile {
-          width: 70px;
+          width: 55px;
         }
       }
     }
@@ -864,6 +944,9 @@ hr {
     }
     h4 {
       font-size: 50px;
+      @include middle {
+        font-size: 30px;
+      }
       @include tablet {
         font-size: 30px;
       }
@@ -873,6 +956,9 @@ hr {
     }
     p {
       font-size: 45px;
+      @include middle {
+        font-size: 25px;
+      }
       @include tablet {
         font-size: 25px;
       }

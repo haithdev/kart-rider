@@ -12,6 +12,7 @@ const SectionCar = (props) => {
   //! Render
   return (
     <CharacterWithSlider
+      isFullImage={true}
       label="XE ĐUA"
       listImage={[
         {
