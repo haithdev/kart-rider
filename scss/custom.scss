@@ -153,7 +153,6 @@ hr {
 }
 .character-section {
   height: 100vh;
-
   @include middle {
     height: 100vh;
   }
@@ -172,7 +171,9 @@ hr {
     background-position: center;
     @include overload {
       background-size: contain;
+      display: flex;
       align-items: center;
+      justify-content: center;
     }
     @include middle {
       display: flex;
