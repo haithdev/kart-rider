@@ -24,23 +24,31 @@ const SectionSource = ({
             <img src="static/assets/img/video-thumbnail.png" alt="" />
           </div>
           <div className="row button-section-left">
-            <div className="col btn-car" onClick={onClickCar}>
-              <button>Xe đua</button>
+            <div className="col btn-car">
+              <a href="#section-car">
+                <button>Xe đua</button>
+              </a>
             </div>
-            <div className="col btn-map" onClick={onClickMap}>
-              <button>Map</button>
+            <div className="col btn-map">
+              <a href="#section-map">
+                <button>Map</button>
+              </a>
             </div>
-            <div className="col btn-character" onClick={onClickCharacter}>
-              <button>Nhân vật</button>
+            <div className="col btn-character">
+              <a href="#section-character">
+                <button>Nhân vật</button>
+              </a>
             </div>
           </div>
           <div className="col">
-            <div className="btn-special" onClick={onClickSpecialMode}>
-              <img
-                src="static/assets/img/Button-frames/btn-mod-choi-dac-biet.png"
-                alt=""
-              />
-              <button>Mode chơi đặc biệt</button>
+            <div className="btn-special">
+              <a href="#section-special">
+                <img
+                  src="static/assets/img/Button-frames/btn-mod-choi-dac-biet.png"
+                  alt=""
+                />
+                <button>Mode chơi đặc biệt</button>
+              </a>
             </div>
           </div>
         </div>

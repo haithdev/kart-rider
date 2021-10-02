@@ -43,10 +43,18 @@ export default function Index() {
           fullpageApi.moveTo(6, 0);
         }}
       />
-      <SectionCharacter />
-      <SectionCar />
-      <SectionMap />
-      <SectionSpecialMod />
+      <div id="section-character">
+        <SectionCharacter />
+      </div>
+      <div id="section-car">
+        <SectionCar />
+      </div>
+      <div id="section-map">
+        <SectionMap />
+      </div>
+      <div id="section-special">
+        <SectionSpecialMod />
+      </div>
     </>
   );
 }
