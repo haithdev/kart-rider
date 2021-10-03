@@ -21,7 +21,9 @@ const SectionSource = ({
         {/*  */}
         <div className="col section-left">
           <div className="section-img-video-demo">
-            <img src="static/assets/img/video-thumbnail.png" alt="" />
+            <video width="320" height="240" controls>
+              <source src="/static/assets/video/video-demo.mp4" />
+            </video>
           </div>
           <div className="row button-section-left">
             <div className="col btn-car">

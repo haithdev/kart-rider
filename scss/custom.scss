@@ -872,6 +872,22 @@ hr {
         background-size: 15px 100%;
       }
     }
+    // SAFARI SCROLL BAR
+    .hh-new-list::-webkit-scrollbar-button {
+      border-radius: 10px;
+      background-image: url("/static/assets/img/scroll-icon-news.png");
+      background-size: 30px 100vh;
+      background-repeat: no-repeat;
+      @include middle {
+        background-size: 30px 100%;
+      }
+      @include tablet {
+        background-size: 30px 100%;
+      }
+      @include mobile {
+        background-size: 15px 100%;
+      }
+    }
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -1092,9 +1108,21 @@ hr {
 .whitepaper-container {
   position: relative;
   .whitepaper-section {
+    @include overload{
+      max-width: 1520px;
+    }
+    max-width: 1920px;
+    width: 85%;
+    margin: auto;
     position: absolute;
     top: 40%;
     right: 0;
     left: 0;
+    .white-paper-item {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
   }
 }
