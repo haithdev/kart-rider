@@ -49,7 +49,7 @@ const Header = (props) => {
           </nav>
         </div>
         <div className="btn-play">
-          <img src="/static/assets/img/Button-frames/btn-play.png" alt="" />
+          <img src="/static/assets/img/banner-header.png" alt="" />
         </div>
       </div>
     </div>
