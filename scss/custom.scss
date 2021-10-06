@@ -170,7 +170,7 @@ hr {
   }
 }
 .character-section {
-  height: 100vh;
+  height: 950px;
   @include middle {
     height: 800px;
   }
@@ -182,7 +182,7 @@ hr {
   }
   &__container {
     width: 100%;
-    height: 100%;
+    height: 850px;
     background-image: url("/static/assets/img/bg.png");
     background-size: 1920px;
     background-repeat: no-repeat;
@@ -192,15 +192,15 @@ hr {
       display: flex;
       align-items: center;
       justify-content: center;
-      height: calc(100vh - 100px);
     }
     @include middle {
       display: flex;
+      height: 700px;
       align-items: center;
       background-size: cover;
     }
     @include tablet {
-      height: 100vh;
+      height: 100%;
     }
     @include mobile {
       height: 100%;
@@ -224,7 +224,7 @@ hr {
       justify-content: center;
     }
     @include tablet {
-      height: 100vh;
+      height: 100%;
       justify-content: center;
       align-items: center;
     }
@@ -326,7 +326,7 @@ hr {
     img {
       margin: auto;
       height: 100%;
-      width: 100%;
+      width: 90%;
     }
   }
   .btn-arrow {
@@ -936,7 +936,7 @@ hr {
       padding-left: 7px;
       width: 240px;
       background-size: 240px 80px;
-      height: 65px ;
+      height: 65px;
     }
     .hh-new__item_thumbnail {
       img {
@@ -967,7 +967,7 @@ hr {
         font-size: 30px;
       }
       @include mobile {
-        font-size: 15px;
+        font-size: 20px;
       }
     }
     p {
@@ -1108,7 +1108,7 @@ hr {
 .whitepaper-container {
   position: relative;
   .whitepaper-section {
-    @include overload{
+    @include overload {
       max-width: 1520px;
     }
     max-width: 1920px;
@@ -1126,4 +1126,3 @@ hr {
     }
   }
 }
-  

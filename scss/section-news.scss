@@ -20,9 +20,8 @@
     background-size: cover;
   }
   @include overload {
-    height: 100vh;
     align-items: center;
-    background-size: cover;
+    background-size: contain;
   }
 }
 .section-left {
@@ -97,13 +96,11 @@
   background-size: contain;
 }
 .btn-map button {
-  background: url("/static/assets/img/Button-frames/btn-frames-map.png")
-    no-repeat;
+  background: url("/static/assets/img/Button-frames/btn-frames-map.png") no-repeat;
   background-size: contain;
 }
 .btn-character button {
-  background: url("/static/assets/img/Button-frames/btn-frames-map.png")
-    no-repeat;
+  background: url("/static/assets/img/Button-frames/btn-frames-map.png") no-repeat;
   background-size: contain;
 }
 .btn-special button {
@@ -151,8 +148,8 @@
     .section-title-button__frames_inner {
       position: absolute;
       top: 10px;
-      left: 40px ;
-      right: 30px ;
+      left: 40px;
+      right: 30px;
       @include tablet {
         top: 40px;
         left: -10px;
@@ -249,8 +246,11 @@
     width: 100%;
     height: 157px;
     overflow-y: scroll;
+    @include tablet {
+      height: 130px;
+    }
     @include mobile {
-      height: 77px;
+      height: 95px;
     }
   }
   #scroll-bar-source::-webkit-scrollbar-track {
@@ -311,7 +311,7 @@
       padding: 0 !important;
     }
     @include tablet {
-      padding: 11px 0;
+      padding: 6px 0;
     }
   }
   a {

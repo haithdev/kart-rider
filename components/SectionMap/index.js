@@ -31,7 +31,7 @@ const SectionMap = (props) => {
         },
         {
           id: 4,
-          src: "/static/assets/img/maps/map_1.png",
+          src: "/static/assets/img/maps/map_2.png",
         },
       ]}
     />

@@ -40,11 +40,6 @@
   }
 }
 
-@mixin web {
-  @media (max-width: 1440px) {
-    @content;
-  }
-}
 
 @mixin overload {
   @media (min-width: 1440px) {
