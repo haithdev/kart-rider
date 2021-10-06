@@ -19,15 +19,15 @@ const SectionMap = (props) => {
       listImage={[
         {
           id: 1,
-          src: "/static/assets/img/maps/map_1.png",
+          src: "/static/assets/img/maps/map_1.jpg",
         },
         {
           id: 2,
-          src: "/static/assets/img/maps/map_2.png",
+          src: "/static/assets/img/maps/map_2.jpg",
         },
         {
           id: 3,
-          src: "/static/assets/img/maps/map_4.png",
+          src: "/static/assets/img/maps/map_3.jpg",
         },
         {
           id: 4,

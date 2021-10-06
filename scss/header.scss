@@ -3,7 +3,7 @@
   height: 100vh;
   background-image: url("/static/assets/img/bg-header.png");
   background-position: top;
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   &:after {
@@ -91,16 +91,16 @@
   position: absolute;
   bottom: 6%;
   z-index: 1;
-  width: 250px;
+  width: 500px;
   @include middle {
     bottom: 3%;
-    width: 250px;
+    width: 450px;
   }
   img {
     width: 100%;
   }
   @include tablet {
-    width: 200px;
+    width: 450px;
   }
   @include mobile {
     width: 200px;
