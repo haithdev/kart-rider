@@ -3,9 +3,17 @@
   height: 920px;
   background-image: url("/static/assets/img/bg-header.png");
   background-position: top;
-  background-size: 1920px;
+  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  @include mobile {
+    height: 300 px;
+    background-position: initial;
+  }
+  @include tablet {
+    height: 300px;
+    background-position: initial;
+  }
   &:after {
     position: absolute;
     left: 0;
@@ -34,15 +42,17 @@
   }
   @include middle {
     height: 940px;
+    background-size: cover;
     background-size: 1366px;
   }
   @include tablet {
     height: 610px;
     background-size: 768px;
+    background-size: cover;
     background-position: initial;
   }
   @include mobile {
-    height: 385px !important;
+    height: 300px ;
     background-size: cover;
     background-position: initial;
   }
@@ -84,23 +94,23 @@
   }
 }
 //
-.btn-play {
-  margin: 0 auto;
-  position: absolute;
-  bottom: 6%;
-  z-index: 1;
-  width: 500px;
-  @include middle {
-    bottom: 3%;
-    width: 450px;
-  }
-  img {
-    width: 100%;
-  }
-  @include tablet {
-    width: 350px;
-  }
-  @include mobile {
-    width: 200px;
-  }
-}
+// .btn-play {
+//   margin: 0 auto;
+//   position: absolute;
+//   bottom: 6%;
+//   z-index: 1;
+//   width: 500px;
+//   @include middle {
+//     bottom: 3%;
+//     width: 450px;
+//   }
+//   img {
+//     width: 100%;
+//   }
+//   @include tablet {
+//     width: 350px;
+//   }
+//   @include mobile {
+//     width: 200px;
+//   }
+// }
