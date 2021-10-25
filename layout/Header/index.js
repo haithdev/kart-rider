@@ -47,9 +47,9 @@ const Header = (props) => {
             </div>
           </nav>
         </div>
-        <div className="btn-play">
+        {/* <div className="btn-play">
           <img src="/static/assets/img/banner-header.png" alt="" />
-        </div>
+        </div> */}
       </div>
     </div>
   );
