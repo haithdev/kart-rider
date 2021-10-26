@@ -56,6 +56,11 @@
     background-size: cover;
     background-position: initial;
   }
+  @media (max-width: 496px) {
+    height: 290px;
+    background-size: contain;
+    background-position: initial;
+  }
 }
 .nav-mobile {
   display: flex;
