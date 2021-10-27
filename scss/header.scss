@@ -1,9 +1,10 @@
 .header {
   margin: 0 auto;
-  height: 750px;
+  height: 700px;
+  width: auto;
   background-image: url("/static/assets/img/bg-header.png");
   background-position: top;
-  background-size: cover;
+  background-size:   cover;
   background-repeat: no-repeat;
   position: relative;
   &:after {
@@ -36,23 +37,18 @@
     background-size: cover;
     background-position: initial
   }
-  // @include middle {
-  //   height: 710px;
-  //   background-size: cover;
-  //   background-position: initial
-  // }
+  @include middle {
+    height: 600px;
+    background-size: cover;
+    background-position: initial
+  }
   @include tablet {
-    height: 480px;
+    height: 430px;
     background-size: cover;
     background-position: initial;
   }
   @include mobile {
     height: 215px;
-    background-size: cover;
-    background-position: initial;
-  }
-  @media (min-width: 2736px) {
-    height: 1530px;
     background-size: cover;
     background-position: initial;
   }
