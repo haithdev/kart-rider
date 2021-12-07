@@ -28,10 +28,10 @@ const WhitePaper = (props) => {
       id: 3,
       src: "/static/assets/img/white-page/white-paper-3.png",
     },
-    {
-      id: 4,
-      src: "/static/assets/img/white-page/white-paper-4.png",
-    },
+    // {
+    //   id: 4,
+    //   src: "/static/assets/img/white-page/white-paper-4.png",
+    // },
     {
       id: 5,
       src: "/static/assets/img/white-page/white-paper-5.png",
